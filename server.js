@@ -291,7 +291,6 @@ app.post("/login", async (req, res) => {
 // GET /weather?city=Riyadh
 // =========================
 app.get("/weather", async (req, res) => {
-  // Implement logic here based on the TODO 3.
   const auth = req.headers.authorization;
   if (!auth) {
     return res.status(401).json({ error: "Missing token" });
